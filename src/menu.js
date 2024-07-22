@@ -1,4 +1,5 @@
 // menu
+import Menu from '/assets/menu.png';
 
 export default function loadMenu() {
     const content = document.querySelector('#content');
@@ -16,8 +17,8 @@ export default function loadMenu() {
     const pageContent = document.createElement('div');
     pageContent.classList.add('page-content');
 
-    const image = document.createElement('img');
-    image.src = '/assets/menu.png';
+    const image = new Image();
+    image.src = Menu;
     image.height = '1000';
 
     pageContent.appendChild(image);

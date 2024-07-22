@@ -1,4 +1,5 @@
 // about.js
+import CityMap from '/assets/gotham-city-map.png';
 
 export default function loadAbout() {
     const content = document.querySelector('#content');
@@ -19,8 +20,8 @@ export default function loadAbout() {
     const innerDiv = document.createElement('div');
     innerDiv.classList.add('inner-div');
 
-    const image = document.createElement('img');
-    image.src = '/assets/gotham-city-map.png';
+    const image = new Image();
+    image.src = CityMap;
     image.height = 700;
     innerDiv.appendChild(image);
 
