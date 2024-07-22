@@ -1,4 +1,5 @@
 // home.js
+import Layout from '/assets/coffee-layout.png';
 
 export default function loadHome() {
 
@@ -17,8 +18,8 @@ export default function loadHome() {
     const pageContent = document.createElement('div');
     pageContent.classList.add('page-content');
 
-    const image = document.createElement('img');
-    image.src = '/assets/coffee-layout.png';
+    const image = new Image();
+    image.src = Layout;
     image.height = '500';
 
     pageContent.appendChild(image);
