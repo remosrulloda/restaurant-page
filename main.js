@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadAbout)\n/* harmony export */ });\n// about.js\n\nfunction loadAbout() {\n    const content = document.querySelector('#content');\n\n    const buttons = document.querySelectorAll('button');\n    buttons.forEach(button => {\n        button.classList.remove('toggled');\n    });\n\n    const btn = document.querySelector('#aboutbtn');\n    btn.classList.add('toggled');\n\n    content.innerHTML = '';\n\n    const pageContent = document.querySelector('div');\n    pageContent.classList.add('about');\n\n    const innerDiv = document.createElement('div');\n    innerDiv.classList.add('inner-div');\n\n    const image = document.createElement('img');\n    image.src = '/assets/gotham-city-map.png';\n    image.height = 700;\n    innerDiv.appendChild(image);\n\n    const subtitle = document.createElement('div');\n    subtitle.innerHTML = `\n    <h2>Our Story</h2>\n    <p>Founded in the heart of Gotham City, Gotham Café was born from a love of rich, flavorful coffee and the unique charm of our beloved city. Our founders, lifelong Gothamites, envisioned a place where the community could gather, relax, and escape the city's ever-present shadows. With this dream in mind, Gotham Café opened its doors, offering a sanctuary where the city's dark allure meets the warmth and comfort of a neighborhood café.</p>\n\n    <br> \n    <h2>Our Coffee</h2>\n    <p>Our commitment to quality begins with our coffee. We source our beans from the finest coffee-growing regions around the world, ensuring that every cup is rich, aromatic, and full of flavor. Our expert baristas are passionate about their craft, meticulously preparing each drink to highlight the unique characteristics of our beans. Whether you're a coffee connoisseur or just discovering the joy of a perfectly brewed cup, you'll find something to love at Gotham Café.</p>\n    <br>\n    <h2>Our Mission</h2>\n    <p>At Gotham Café, our mission is simple: to provide a welcoming space where quality coffee, exceptional service, and the vibrant spirit of Gotham come together. We believe that a great cup of coffee can brighten even the darkest day, and we're dedicated to crafting the perfect brew for every customer.</p>\n    `;\n    subtitle.classList.add('text');\n\n    innerDiv.appendChild(subtitle);\n\n    pageContent.appendChild(innerDiv);\n    \n    content.appendChild(pageContent);\n    \n    return content;\n}\n\n\n//# sourceURL=webpack://restaurant-page/./src/about.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadAbout)\n/* harmony export */ });\n/* harmony import */ var _assets_gotham_city_map_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../assets/gotham-city-map.png */ \"./assets/gotham-city-map.png\");\n// about.js\n\n\nfunction loadAbout() {\n    const content = document.querySelector('#content');\n\n    const buttons = document.querySelectorAll('button');\n    buttons.forEach(button => {\n        button.classList.remove('toggled');\n    });\n\n    const btn = document.querySelector('#aboutbtn');\n    btn.classList.add('toggled');\n\n    content.innerHTML = '';\n\n    const pageContent = document.querySelector('div');\n    pageContent.classList.add('about');\n\n    const innerDiv = document.createElement('div');\n    innerDiv.classList.add('inner-div');\n\n    const image = new Image();\n    image.src = _assets_gotham_city_map_png__WEBPACK_IMPORTED_MODULE_0__;\n    image.height = 700;\n    innerDiv.appendChild(image);\n\n    const subtitle = document.createElement('div');\n    subtitle.innerHTML = `\n    <h2>Our Story</h2>\n    <p>Founded in the heart of Gotham City, Gotham Café was born from a love of rich, flavorful coffee and the unique charm of our beloved city. Our founders, lifelong Gothamites, envisioned a place where the community could gather, relax, and escape the city's ever-present shadows. With this dream in mind, Gotham Café opened its doors, offering a sanctuary where the city's dark allure meets the warmth and comfort of a neighborhood café.</p>\n\n    <br> \n    <h2>Our Coffee</h2>\n    <p>Our commitment to quality begins with our coffee. We source our beans from the finest coffee-growing regions around the world, ensuring that every cup is rich, aromatic, and full of flavor. Our expert baristas are passionate about their craft, meticulously preparing each drink to highlight the unique characteristics of our beans. Whether you're a coffee connoisseur or just discovering the joy of a perfectly brewed cup, you'll find something to love at Gotham Café.</p>\n    <br>\n    <h2>Our Mission</h2>\n    <p>At Gotham Café, our mission is simple: to provide a welcoming space where quality coffee, exceptional service, and the vibrant spirit of Gotham come together. We believe that a great cup of coffee can brighten even the darkest day, and we're dedicated to crafting the perfect brew for every customer.</p>\n    `;\n    subtitle.classList.add('text');\n\n    innerDiv.appendChild(subtitle);\n\n    pageContent.appendChild(innerDiv);\n    \n    content.appendChild(pageContent);\n    \n    return content;\n}\n\n\n//# sourceURL=webpack://restaurant-page/./src/about.js?");
 
 /***/ }),
 
@@ -146,7 +146,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ass
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadMenu)\n/* harmony export */ });\n// menu\n\nfunction loadMenu() {\n    const content = document.querySelector('#content');\n\n    const buttons = document.querySelectorAll('button');\n    buttons.forEach(button => {\n        button.classList.remove('toggled');\n    });\n\n    const btn = document.querySelector('#menubtn');\n    btn.classList.add('toggled');\n\n    content.innerHTML = '';\n\n    const pageContent = document.createElement('div');\n    pageContent.classList.add('page-content');\n\n    const image = document.createElement('img');\n    image.src = '/assets/menu.png';\n    image.height = '1000';\n\n    pageContent.appendChild(image);\n\n    content.appendChild(pageContent);\n\n\n    return content;\n}\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ loadMenu)\n/* harmony export */ });\n/* harmony import */ var _assets_menu_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../assets/menu.png */ \"./assets/menu.png\");\n// menu\n\n\nfunction loadMenu() {\n    const content = document.querySelector('#content');\n\n    const buttons = document.querySelectorAll('button');\n    buttons.forEach(button => {\n        button.classList.remove('toggled');\n    });\n\n    const btn = document.querySelector('#menubtn');\n    btn.classList.add('toggled');\n\n    content.innerHTML = '';\n\n    const pageContent = document.createElement('div');\n    pageContent.classList.add('page-content');\n\n    const image = new Image();\n    image.src = _assets_menu_png__WEBPACK_IMPORTED_MODULE_0__;\n    image.height = '1000';\n\n    pageContent.appendChild(image);\n\n    content.appendChild(pageContent);\n\n\n    return content;\n}\n\n//# sourceURL=webpack://restaurant-page/./src/menu.js?");
+
+/***/ }),
+
+/***/ "./assets/gotham-city-map.png":
+/*!************************************!*\
+  !*** ./assets/gotham-city-map.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"b63f8d8bda9da05a5240.png\";\n\n//# sourceURL=webpack://restaurant-page/./assets/gotham-city-map.png?");
+
+/***/ }),
+
+/***/ "./assets/menu.png":
+/*!*************************!*\
+  !*** ./assets/menu.png ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"da1c4a472d6b4936075c.png\";\n\n//# sourceURL=webpack://restaurant-page/./assets/menu.png?");
 
 /***/ })
 
@@ -201,6 +221,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -215,6 +247,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
